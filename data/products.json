@@ -1,0 +1,41 @@
+[
+  {
+    "id": "soccer-junky-football-vest",
+    "brand": "Soccer Junky",
+    "name": "Soccer Junky 足球棉马甲",
+    "category": "足球服饰",
+    "price": 199,
+    "currency": "CNY",
+    "image": "images/football-vest.jpg",
+    "alt": "Soccer Junky 足球棉马甲",
+    "tag": "主推单品",
+    "description": "足球训练与日常穿着方向的棉马甲商品展示。",
+    "purchaseUrl": ""
+  },
+  {
+    "id": "desporte-compression-pants",
+    "brand": "Desporte",
+    "name": "Desporte 体士彪紧身长裤",
+    "category": "训练装备",
+    "price": 99,
+    "currency": "CNY",
+    "image": "images/compression-pants.jpg",
+    "alt": "Desporte 体士彪紧身长裤",
+    "tag": "训练装备",
+    "description": "足球训练紧身长裤商品展示。",
+    "purchaseUrl": ""
+  },
+  {
+    "id": "desporte-equipment-backpack",
+    "brand": "Desporte",
+    "name": "Desporte 体士彪专业装备包",
+    "category": "装备收纳",
+    "price": 399,
+    "currency": "CNY",
+    "image": "images/equipment-backpack.jpg",
+    "alt": "Desporte 体士彪专业装备包",
+    "tag": "装备收纳",
+    "description": "足球训练与比赛装备收纳商品展示。",
+    "purchaseUrl": ""
+  }
+]
