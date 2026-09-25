@@ -12,9 +12,10 @@
 
 1. 用户当次明确要求
 2. 总部对应商品任务卡与已确认商品事实
-3. 总部当前视觉铁律与品牌规则
-4. 本仓库 `data/products.json`
-5. 现有页面代码与历史实现
+3. 总部 `products/catalog.json` 稳定商品目录
+4. 总部当前视觉铁律与品牌规则
+5. 本仓库 `data/products.json`
+6. 现有页面代码与历史实现
 
 如果信息冲突，不要猜。先保留现状并指出冲突。
 
@@ -29,6 +30,9 @@
 ## 4. 数据与页面
 
 - 商品展示数据唯一入口：`data/products.json`。
+- 总部稳定字段来源：`taobao-visual-system/products/catalog.json`。
+- 总部 → 网站字段映射规则：`taobao-visual-system/docs/product-to-web-handoff.md`。
+- 网站商品记录应尽量保留 `sourceId`，用于回查总部商品目录。
 - `index.html` 负责读取数据并渲染页面；不要再把商品价格和描述复制成第二份硬编码数据。
 - 商品图片放在 `images/`，路径写入 `data/products.json`。
 - 新增商品时优先追加数据，不为每个商品复制整块页面代码。
@@ -45,18 +49,20 @@
 
 每次网站任务：
 
-1. 先检查当前 `index.html`、`data/products.json` 与相关图片。
-2. 确认本次变更所需商品事实。
-3. 在独立分支完成最小改动。
-4. 检查 HTML/JSON 语法与相对路径。
-5. 检查手机端响应式布局。
-6. 说明改了什么、没改什么。
-7. 通过 PR 合并到 `main`。
+1. 先检查总部对应任务卡、`products/catalog.json` 和交接协议。
+2. 再检查当前 `index.html`、`data/products.json` 与相关图片。
+3. 确认本次变更所需商品事实，核对 `sourceId`、价格、名称、图片和购买链接。
+4. 在独立分支完成最小改动。
+5. 检查 HTML/JSON 语法与相对路径。
+6. 检查手机端响应式布局。
+7. 说明改了什么、没改什么。
+8. 通过 PR 合并到 `main`。
 
 ## 7. 与总部的边界
 
 总部负责：
 - 商品事实
+- 稳定商品目录 `products/catalog.json`
 - 品牌资产与视觉铁律
 - 主图/详情页规范
 - 商品任务卡
